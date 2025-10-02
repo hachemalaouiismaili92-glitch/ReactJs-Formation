@@ -2,15 +2,10 @@ import './Button.css'
 import { useState } from 'react';
 
 
-function Botona() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count + 1);
-  }
+function Botona({ count, onClick }) {
 
   return (
-    <button onClick={handleClick} className="btn">
+    <button onClick={onClick} className="btn">
       Clicked {count} times
     </button>
   );
