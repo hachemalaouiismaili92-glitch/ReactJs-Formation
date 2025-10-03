@@ -1,5 +1,4 @@
 import './Button.css'
-import { useState } from 'react';
 
 
 function Botona({ count, onClick }) {
